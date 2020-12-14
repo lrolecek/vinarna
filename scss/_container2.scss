@@ -1,0 +1,17 @@
+.container2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    font-family: $font-special;
+    color: $secondary;
+  
+    
+    overflow: auto;
+    margin: 5px 0;
+    padding: 5px;
+    max-width: 100%;
+
+
+}
+
+

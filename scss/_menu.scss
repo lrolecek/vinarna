@@ -1,0 +1,122 @@
+// MENU
+
+
+@media screen and (max-width: 899px) {
+
+	.menu__checkbox:checked ~ .menu__list {
+		display: block;
+	
+	
+	}
+
+	.menu { 
+		
+		z-index: 1000;
+		
+	}
+	
+	.menu__checkbox {
+	
+		position: absolute;
+		left: -9999px;
+	
+	}
+	
+	.menu__toggler {
+		cursor:pointer;
+	
+	}
+	
+	.menu__list {
+		display: none;
+		
+		list-style: none;
+		/*background-color: $bg-color;*/
+		text-decoration:none;
+		color: $primary;
+		
+
+	
+	}
+	
+	.menu__item {
+		
+		text-decoration:none;
+		
+	}
+	
+	.menu__link {
+		display: block;
+		padding: 15px;
+		text-decoration: none;
+		
+	}
+	
+	
+	.menu__link :hover {
+		
+		background-color: $bg-color;
+	}
+	}
+
+
+@media screen and (min-width: 900px) {
+
+	.menu__toggler {
+		display: none;
+	
+	}
+	.menu__checkbox {
+	
+		position: absolute;
+		left: -9999px;
+	
+	}
+	
+	.menu {
+		background-color: white;
+		margin: 10px;
+
+
+	&__list {
+		margin: 0;
+		padding: 2px;
+		display: flex;
+		justify-content: center;
+		
+		list-style: none;
+		
+
+	}
+
+	&__item:not(:last-child) {
+		border-right: 1px solid white;
+	
+
+		
+	}
+
+	&__item--active .menu__link{
+		background-color: $bg-color;
+		color: $primary;
+
+	}
+
+
+	&__link {
+		display: block;
+		padding: 10px;
+		color: $primary;
+		text-decoration: none;
+		font-weight: bold;
+		border-radius: 30px;
+	
+
+		&:hover,
+		&:focus {
+			background-color:$bg-color;
+			color: $primary;
+		}
+	}
+}
+}

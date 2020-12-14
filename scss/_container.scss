@@ -1,0 +1,32 @@
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    font-family: $font-special;
+    color: $secondary;
+    overflow: auto;
+    margin: $pad 0;
+    padding: 5px;
+    
+
+}
+
+
+
+
+@media screen and (min-width: 900px) {
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: $pad;
+    font-family: $font-special;
+    color: $secondary;
+    margin: $pad 0;
+	padding: 5px;
+    overflow: auto;
+  
+}
+
+}

@@ -1,0 +1,20 @@
+---
+layout: layouts/layout1
+title: Vinárna Na Hrádku
+menu: Události
+---
+
+<h2>Události</h2>
+
+{% for clanek in collections.clanky %}
+
+<h3>
+    <a href="{{ clanek.url }}">{{ clanek.data.title }}</a>
+</h3>
+
+<p>
+    {{ clanek.templateContent | striptags() | truncate (50) }}
+</p>
+
+{% endfor %}
+

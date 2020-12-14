@@ -1,0 +1,21 @@
+{% include "partials/page-top.njk" %}
+
+<div class="container">
+
+	<main class="main">
+
+
+	{{ content | safe }}
+
+	</main>
+
+	<aside class="sidebar">
+
+	{{ content | safe }}
+			
+	</aside>
+
+</div>
+
+{% include "partials/page-bottom.njk" %}
+	

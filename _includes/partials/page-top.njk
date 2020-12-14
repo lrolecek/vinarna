@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> {{ title }} </title>
+
+	<!-- Google Fonts -->
+	
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">	
+
+	<!-- Náš vlastní styl -->
+	<link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body> 	
+
+
+
+
+	<header class="header">
+		<h1 class="header__logo">{{ title }}</h1>
+	</header>
+
+	<nav class="menu"> 
+
+		
+		<input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+		<label for="menu-checkbox" class="menu__toggler">☰ Menu</label>
+
+
+		<ul class="menu__list">
+			
+
+			<li class="menu__item {% if menu === 'Vinárna Na Hrádku' %}menu__item--active{% endif %}"><a href="/" class="menu__link">Úvod</a></li>
+
+            <li class="menu__item {% if menu === 'O nás' %}menu__item--active{% endif %}"><a href="/o-nas/" class="menu__link">O nás</a></li>
+            
+            <li class="menu__item {% if menu === 'Nabídka vín' %}menu__item--active{% endif %}"><a href="/nabidka-vin/" class="menu__link">Nabídka vín</a></li>
+            
+            <li class="menu__item {% if menu === 'Události' %}menu__item--active{% endif %}"><a href="/udalosti/" class="menu__link">Události</a>
+			</li>
+
+			<li class="menu__item {% if menu === 'Fotogalerie' %}menu__item--active{% endif %}"><a href="/fotogalerie/" class="menu__link">Fotogalerie</a>
+			</li>
+			
+			<li class="menu__item {% if menu === 'kontakt' %}menu__item--active{% endif %}"><a href="/kontakt/" class="menu__link">Kontakt</a>
+			</li>
+		</ul>
+    </nav>
+
+	
+	
