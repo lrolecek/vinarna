@@ -11,7 +11,7 @@ module.exports = function(eleventyConfig) {
 
   return {
     // možné formáty šablon
-    templateFormats: ["njk","html", "liquid", "md"],
+    templateFormats: ["njk", "html", "liquid", "md"],
 
     // jako šablonovací jazyk zvolíme Nunjucks
     markdownTemplateEngine: "njk",
