@@ -1,5 +1,5 @@
 ---
-layout: Layouts/layout1
+layout: layouts/layout1
 title: Degustace portugalských vín
 tags: clanky
 ---
