@@ -31,9 +31,11 @@
 		display: none;
 		
 		list-style: none;
-		/*background-color: $bg-color;*/
+		background-color: white;
 		text-decoration:none;
-		color: $primary;
+		/*color: $primary;*/
+		margin: 0;
+		padding: 0;
 		
 
 	
@@ -42,20 +44,24 @@
 	.menu__item {
 		
 		text-decoration:none;
-		
+		border-bottom: 1px solid $primary;
 	}
 	
 	.menu__link {
 		display: block;
+		text-align: left;
 		padding: 15px;
 		text-decoration: none;
+		color: $primary;
+
 		
 	}
 	
 	
-	.menu__link :hover {
+	.menu__link:hover {
 		
-		background-color: $bg-color;
+		background-color:$bg-color;
+		color: $primary;
 	}
 	}
 
